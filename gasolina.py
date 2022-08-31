@@ -9,4 +9,6 @@ data = pd.read_csv('gasolina.csv')
 data.head()
 
 gasolina = sns.lineplot(x = 'dia',y='venda',data=data)
+gasolina.set_title("Variação do preço da gasolina em São Paulo")
+plt.legend(labels=["Preço"])
 plt.savefig('gasolina.png')
